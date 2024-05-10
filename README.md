@@ -8,4 +8,4 @@
 - **_La idea es que el jugador pueda moverse por la pantalla y cuando choque con un elemento, este desaparecerá y actualizará la etiqueta con el nombre del elemento._**
 - **_Trabajaremos en Visual Studio, Windows Forms .Net con C#._**
 
-  _¡Espero que te diviertas con este tutorial!_
+  **_¡Espero que te diviertas con este tutorial!_**
