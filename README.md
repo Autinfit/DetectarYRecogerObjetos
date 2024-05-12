@@ -17,5 +17,5 @@ Objetivos de la lección:
 - Crea un límite de tiempo por elemento, para que desaparezcan de la pantalla cuando se acabe su tiempo
 - Agregar y eliminar elementos dinámicamente de la lista
 - Crear un sistema de colisión de jugadores y elementos.
-Elimina los elementos del juego cuando el jugador choca con los elementos
+- Elimina los elementos del juego cuando el jugador choca con los elementos
 Obtenga el nombre del elemento y muéstrelo en la etiqueta en formularios de Windows
