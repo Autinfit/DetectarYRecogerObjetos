@@ -18,4 +18,4 @@ Objetivos de la lección:
 - Agregar y eliminar elementos dinámicamente de la lista
 - Crear un sistema de colisión de jugadores y elementos.
 - Elimina los elementos del juego cuando el jugador choca con los elementos
-Obtenga el nombre del elemento y muéstrelo en la etiqueta en formularios de Windows
+- Obtenga el nombre del elemento y muéstrelo en la etiqueta en formularios de Windows
