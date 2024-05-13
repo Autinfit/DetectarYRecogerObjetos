@@ -14,7 +14,7 @@
 - _Crear una instancia de la clase desde el formulario principal usando funciones personalizadas._
 - _Asignar nombres de los elementos usando una matriz de cadenas._
 - _Cargue archivos externos desde la carpeta a una lista y use esa lista para asignar imágenes aleatoriamente a la clase de elementos._
-- Crea un límite de tiempo por elemento, para que desaparezcan de la pantalla cuando se acabe su tiempo
+- Crea un límite de tiempo por elemento, para que desaparezcan de la pantalla cuando se acabe su tiempo.
 - Agregar y eliminar elementos dinámicamente de la lista
 - Crear un sistema de colisión de jugadores y elementos.
 - Elimina los elementos del juego cuando el jugador choca con los elementos
