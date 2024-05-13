@@ -11,7 +11,7 @@
 ### Objetivos de la lección:
 
 - _Cree una clase de elementos en C# con sus propias propiedades, como posiciónX, posiciónY, alto y ancho, etc._
-- Crear una instancia de la clase desde el formulario principal usando funciones personalizadas
+- Crear una instancia de la clase desde el formulario principal usando funciones personalizadas.
 - Asignar nombres de los elementos usando una matriz de cadenas.
 - Cargue archivos externos desde la carpeta a una lista y use esa lista para asignar imágenes aleatoriamente a la clase de elementos
 - Crea un límite de tiempo por elemento, para que desaparezcan de la pantalla cuando se acabe su tiempo
