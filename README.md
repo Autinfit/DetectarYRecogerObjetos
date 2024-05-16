@@ -1,6 +1,6 @@
 # NewRepDetectarYRecogerObjetos
 
-- **_En este tutorial haremos mejoras en el tutorial de movimientos de sprites de 4 vías._**
+- **_En este tutorial haremos mejoras en el tutorial de movimientos de sprites de 4 vías diferentes._**
 - **_Para continuar con este proyecto, asegúrese de haber terminado el último tutorial, ya que usaremos el código y lo configuraremos desde el primer proyecto._**
 - **_En este tutorial agregaremos la función de recolección y caída de aquellos elementos._**
 - **_Para esta función, cargaremos 17 elementos de RPG diferentes y los soltaremos aleatoriamente en la pantalla._**
