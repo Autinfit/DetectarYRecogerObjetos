@@ -6,7 +6,7 @@
 - **_Para esta función, cargaremos 17 elementos de RPG diferentes y los soltaremos aleatoriamente en la pantalla._**
 - **_También agregaremos una función de colisión de entre jugadores y elementos en el juego._**
 - **_La idea es que el jugador pueda desplazarse por la pantalla y cuando colisione con un elemento, éste desaparecerá y actualizará la etiqueta con el nombre del elemento._**
-- **_Trabajaremos con Visual Studio, Windows Forms .Net con C#._**
+- **_Trabajaremos con Visual Studio + Windows Forms .Net con C#._**
 
 ### Objetivos de esta lección:
 
