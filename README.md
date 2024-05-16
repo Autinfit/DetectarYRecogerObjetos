@@ -8,7 +8,7 @@
 - **_La idea es que el jugador pueda moverse por la pantalla y cuando choque con un elemento, este desaparecerá y actualizará la etiqueta con el nombre del elemento._**
 - **_Trabajaremos en Visual Studio, Windows Forms .Net con C#._**
 
-### Objetivos de la lección:
+### Objetivos de esta lección:
 
 - **_Cree una clase de elementos en C# con sus propias propiedades, como posiciónX, posiciónY, alto y ancho, etc._**
 - **_Crear una instancia de la clase desde el formulario principal usando funciones personalizadas._**
