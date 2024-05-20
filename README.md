@@ -18,4 +18,4 @@
 - **_Agregar y eliminar elementos dinámicamente de la lista._**
 - **_Crear un sistema de colisión de jugadores y elementos._**
 - **_Elimina los elementos del juego cuando el jugador choca con los elementos._**
-- **_Obtener el nombre del elemento y mostrar en la etiqueta en formularios de Windows._**
+- **_Obtener el nombre del elemento y mostrar en la etiqueta en el formularios de Windows._**
