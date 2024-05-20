@@ -17,5 +17,5 @@
 - **_Crea un límite de tiempo por elemento, para que desaparezcan de la pantalla cuando se acabe su tiempo._**
 - **_Agregar y eliminar elementos dinámicamente de la lista._**
 - **_Crear un sistema de colisión de jugadores y elementos._**
-- **_Eliminar los elementos del juego cuando el jugador choca con los elementos._**
+- **_Eliminar los elementos del juego cuando el jugador colisione con los elementos._**
 - **_Obtener el nombre del elemento y mostrar en la etiqueta en el formulario de Windows._**
