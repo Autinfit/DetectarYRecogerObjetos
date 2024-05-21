@@ -3,7 +3,7 @@
 - **_En este tutorial haremos mejoras en el tutorial de movimientos de sprites de 4 vías distintas._**
 - **_Para continuar con este proyecto, asegúrate de haber concluido la primera parte del tutorial, ya que utilizaremos el código y lo vamos configurando desde el primer proyecto._**
 - **_En este tutorial agregaremos la función de recolección y caída libre de aquellos elementos._**
-- **_Para esta función, cargaremos 17 elementos de RPG diferentes y los soltaremos aleatoriamente en la pantalla._**
+- **_Para esta función, cargaremos 17 elementos de RPG diferentes y los soltaremos aleatoriamente por la pantalla._**
 - **_También agregaremos una función de colisión de entre jugadores y elementos en el juego._**
 - **_La idea es que el jugador pueda desplazarse por la pantalla y cuando colisione con un elemento, éste desaparecerá y actualizará la etiqueta con el nombre del elemento._**
 - **_Trabajaremos con Visual Studio + Windows Forms .Net con C#._**
