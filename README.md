@@ -5,7 +5,7 @@
 - **_En este tutorial agregaremos la función de recolección y caída libre de aquellos elementos._**
 - **_Para esta función, cargaremos 17 elementos de RPG diferentes y los soltaremos aleatoriamente por la pantalla._**
 - **_También agregaremos una función de colisión de entre jugadores y elementos en el juego._**
-- **_La idea es que el jugador pueda desplazarse por toda la pantalla y cuando colisione con cualquier elemento, éste desaparecerá y actualizará la etiqueta con el nombre del elemento._**
+- **_La idea es que el jugador pueda desplazarse por toda la pantalla y cuando colisione con cualquier elemento, éste desaparecerá y actualizará la etiqueta con el nombre de dicho elemento._**
 - **_Trabajaremos con Visual Studio + Windows Forms .Net con C#._**
 
 ### Objetivos de esta lección:
