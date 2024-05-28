@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             cantidadMovimientos = new Label();
+            cantidadObjetos = new Label();
             SuspendLayout();
             // 
             // cantidadMovimientos
@@ -42,11 +43,23 @@
             cantidadMovimientos.TabIndex = 0;
             cantidadMovimientos.Text = "Movimientos:";
             // 
+            // cantidadObjetos
+            // 
+            cantidadObjetos.AutoSize = true;
+            cantidadObjetos.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            cantidadObjetos.ForeColor = Color.FromArgb(255, 128, 0);
+            cantidadObjetos.Location = new Point(500, 500);
+            cantidadObjetos.Name = "cantidadObjetos";
+            cantidadObjetos.Size = new Size(324, 38);
+            cantidadObjetos.TabIndex = 1;
+            cantidadObjetos.Text = "Objetos coleccionados: ";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(878, 544);
+            Controls.Add(cantidadObjetos);
             Controls.Add(cantidadMovimientos);
             Name = "Form1";
             Text = "Detectar y recoger objetos";
@@ -57,5 +70,6 @@
         #endregion
 
         private Label cantidadMovimientos;
+        private Label cantidadObjetos;
     }
 }
