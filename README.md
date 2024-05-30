@@ -16,6 +16,6 @@
 - **_Cargar archivos externos desde la carpeta a una lista y usar esa lista para asignar imágenes aleatoriamente a la clase de elementos._**
 - **_Crear un límite de tiempo por elemento, para que desaparezcan de la pantalla cuando se acabe el tiempo._**
 - **_Agregar y eliminar elementos dinámicamente de la lista._**
-- **_Crear un sistema de colisión entre el jugador y los elementos._**
+- **_Crear un sistema de colisión entre el jugador y los objetos._**
 - **_Eliminar los elementos del juego cuando el jugador colisione con los elementos._**
 - **_Obtener el nombre del elemento y mostrar en la etiqueta en el formulario de Windows._**
