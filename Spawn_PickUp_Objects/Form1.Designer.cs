@@ -63,6 +63,7 @@
             Controls.Add(cantidadMovimientos);
             Name = "Form1";
             Text = "Detectar y recoger objetos";
+            KeyDown += EventoPresionarTeclas;
             ResumeLayout(false);
             PerformLayout();
         }
