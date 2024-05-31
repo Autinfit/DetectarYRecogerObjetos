@@ -28,5 +28,30 @@ namespace Spawn_PickUp_Objects
         {
             InitializeComponent();
         }
+
+        private void EventoPresionarTeclas(object sender, KeyEventArgs e)
+        {
+            // EVENTO PARA PRESIONAR CUALQUIER TECLA DEL TECLADO...
+
+            if (e.KeyCode == Keys.Left) // SI SE PRESIONA LA TECLA IZQUIERDA...
+            {
+                izquierda = true; // EL JUGADOR VA HACIA LA IZQUIERDA.
+            }
+
+            if (e.KeyCode == Keys.Right) // SI SE PRESIONA LA TECLA DERECHA...
+            {
+                derecha = true; // EL JUGADOR VA HACIA LA DERECHA.
+            }
+
+            if (e.KeyCode == Keys.Up) // SI SE PRESIONA LA TECLA DE ARRIBA...
+            {
+                arriba = true; // EL JUGADOR VA HACIA ARRIBA.
+            }
+
+            if (e.KeyCode == Keys.Down) // SI SE PRESIONA LA TECLA DE ABAJO...
+            {
+                abajo = true; // EL JUGADOR VA HACIA ABAJO.
+            }
+        }
     }
 }
