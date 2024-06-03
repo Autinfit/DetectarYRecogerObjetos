@@ -64,6 +64,7 @@
             Name = "Form1";
             Text = "Detectar y recoger objetos";
             KeyDown += EventoPresionarTeclas;
+            KeyUp += EventoSoltarTeclas;
             ResumeLayout(false);
             PerformLayout();
         }
