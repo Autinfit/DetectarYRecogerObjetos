@@ -53,5 +53,30 @@ namespace Spawn_PickUp_Objects
                 abajo = true; // EL JUGADOR VA HACIA ABAJO.
             }
         }
+
+        private void EventoSoltarTeclas(object sender, KeyEventArgs e)
+        {
+            // EVENTO PARA SOLTAR CUALQUIER TECLA DEL TECLADO...
+
+            if (e.KeyCode == Keys.Left) // SI SUELTA LA TECLA IZQUIERDA DEL TECLADO...
+            {
+                izquierda = false; // EL JUGADOR NO VA HACIA LA IZQUIERDA.
+            }
+
+            if (e.KeyCode == Keys.Right) // SI SUELTA LA TECLA DERECHA DEL TECLADO...
+            {
+                derecha = false; // EL JUGADOR NO VA HACIA LA DERECHA.
+            }
+
+            if (e.KeyCode == Keys.Up) // SI SUELTA LA TECLA DE ARRIBA DEL TECLADO...
+            {
+                arriba = false; // EL JUGADOR NO VA HACIA ARRIBA.
+            }
+
+            if (e.KeyCode == Keys.Down) // SI SUELTA LA TECLA DE ABAJO DEL TECLADO...
+            {
+                abajo = false; // EL JUGADOR NO VA HACIA ABAJO.
+            }
+        }
     }
 }
