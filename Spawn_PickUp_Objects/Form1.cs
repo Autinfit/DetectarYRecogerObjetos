@@ -78,5 +78,26 @@ namespace Spawn_PickUp_Objects
                 abajo = false; // EL JUGADOR NO VA HACIA ABAJO.
             }
         }
+
+        private void EventoDiseñoFormulario(object sender, PaintEventArgs e)
+        {
+            // EVENTO PARA EDITAR EL FORMULARIO MEDIANTE COMPONENTES GRÁFICOS...
+
+            Graphics Canvas = e.Graphics; // AGREGAREMOS UN LIENZO AL CANVAS DEL FORMULARIO.
+
+            if (lista_objetos != null) // SI SE ENCUENTRAN LOS OBJETOS MEDIANTE UNA LISTA...
+            {
+                foreach (Objetos objeto in lista_objetos) // ASOCIAREMOS A CADA OBJETO DENTRO DE LA LISTA...
+                {
+                    // ...AGREGANDO SUS CARACTERÍSTICAS RESPECTIVAS AL FORMULARIO!
+
+                    Canvas.DrawImage(objeto.imagen_objeto, objeto.posicionX, objeto.posicionY, objeto.ancho, objeto.altura); // DIBUJAREMOS A UN OBJETO CUALQUIERA CON SUS ATRIBUTOS PRINCIPALES...
+                }
+            }
+
+            // LUEGO, DIBUJAREMOS AL JUGADOR DENTRO DEL CANVAS...
+
+            Canvas.DrawImage(jugador, jugadorEnX, jugadorEnY, anchoJugador, alturaJugador);
+        }
     }
 }
