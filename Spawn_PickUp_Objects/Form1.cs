@@ -99,5 +99,18 @@ namespace Spawn_PickUp_Objects
 
             Canvas.DrawImage(jugador, jugadorEnX, jugadorEnY, anchoJugador, alturaJugador);
         }
+
+        private void Configuracion()
+        {
+            this.BackgroundImage = Image.FromFile("bg.jpg"); // SE CARGA LA IMAGEN DE FONDO IMPORTADO DENTRO DEL DIRECTORIO.
+            this.BackgroundImageLayout = ImageLayout.Stretch; // EL FONDO DE LA IMAGEN QUEDARÁ ENDEREZADA.
+            this.DoubleBuffered = true; // TODA LA EJECUCIÓN DEL PROGRAMA VA A QUEDAR MEDIANTE UN DOBLE BÚFER.
+
+            // CARGA LOS ARCHIVOS DEL JUGADOR MEDIANTE UNA LISTA DE MOVIMIENTOS MÁS LOS OBJETOS...
+
+            movimientosPersonaje = Directory.GetFiles("player", "*.png").ToList();
+            jugador = Image.FromFile(movimientosPersonaje[0]);
+            ubicacion_objeto = Directory.GetFiles("items", "*.png").ToList();
+        }
     }
 }
