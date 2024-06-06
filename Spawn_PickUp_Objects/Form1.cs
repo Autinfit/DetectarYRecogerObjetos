@@ -27,6 +27,7 @@ namespace Spawn_PickUp_Objects
         public Form1()
         {
             InitializeComponent();
+            Configuracion(); // LLAMADO DEL MÉTODO.
         }
 
         private void EventoPresionarTeclas(object sender, KeyEventArgs e)
@@ -111,6 +112,28 @@ namespace Spawn_PickUp_Objects
             movimientosPersonaje = Directory.GetFiles("player", "*.png").ToList();
             jugador = Image.FromFile(movimientosPersonaje[0]);
             ubicacion_objeto = Directory.GetFiles("items", "*.png").ToList();
+        }
+
+        private void AnimarJugador(int inicio, int fin)
+        {
+            // MÉTODO PARA ANIMAR AL JUGADOR MIENTRAS CAMINA DANDO PASOS...
+
+            reducirFrecuenciaPatrones += 1; // MIENTRAS EL PERSONAJE CAMINA...
+
+            if (reducirFrecuenciaPatrones == 4) // SI LA FRECUENCIA DE LOS PATRONES MEDIANTE RECURSOS SON DE 4 MIENTRAS CAMINA...
+            {
+                pasos++; // ENTONCES SE ASOCIA A QUE EL PERSONAJE PUEDA CAMINAR MEDIANTE CANTIDAD DE PASOS CON LOS PIES.
+                reducirFrecuenciaPatrones = 0; // MIENTRAS QUE EL PERSONAJE QUEDA PARADO INICIALMENTE.
+            }
+
+            // ANÁLISIS DE ANIMACIÓN AL CAMINAR ESTE PERSONAJE MEDIANTE UN INICIO Y UN FIN...
+
+            if (pasos > fin || pasos < inicio)
+            {
+                pasos = inicio; // INICIA LA CAMINATA DEL PERSONAJE MEDIANTE PATRONES DE RECURSOS DE ANIMACIÓN.
+            }
+
+            jugador = Image.FromFile(movimientosPersonaje[pasos]); // SE EXTRAE DEL DIRECTORIO ALGUNOS RECURSOS NECESARIOS DEL PERSONAJE PARA EFECTUAR LA ANIMACIÓN.
         }
     }
 }
