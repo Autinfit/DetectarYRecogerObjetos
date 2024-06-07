@@ -101,6 +101,45 @@ namespace Spawn_PickUp_Objects
             Canvas.DrawImage(jugador, jugadorEnX, jugadorEnY, anchoJugador, alturaJugador);
         }
 
+        private void TiempoEjecucion(object sender, EventArgs e)
+        {
+            // MÉTODO PARA INICIALIZAR LA EJECUCIÓN DEL PROYECTO EN GENERAL...
+
+            // MEDIANTE MOVIMIENTOS DEL PERSONAJE, VAMOS A CONFIGURAR SUS DIRECCIONES RESPECTIVAS MEDIANTE UNA CONDICIÓN ("if")...
+
+            if (izquierda && jugadorEnX > 0) // SI EL JUGADOR VA HACIA LA IZQUIERDA...
+            {
+                jugadorEnX -= velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO CONTRARIO.
+                AnimarJugador(4, 7); // LAS ANIMACIONES VAN A SER DEFINIDAS MEDIANTE SUS CANTIDADES RESPECTIVAS PARA CADA CLON DEL JUGADOR.
+            }
+
+            else if (derecha && jugadorEnX + anchoJugador < this.ClientSize.Width) // SI EL JUGADOR VA HACIA LA DERECHA...
+            {
+                jugadorEnX += velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO DIRECTO.
+                AnimarJugador(8, 11); // LAS ANIMACIONES VAN A SER DEFINIDAS MEDIANTE SUS CANTIDADES RESPECTIVAS PARA CADA CLON DEL JUGADOR.
+            }
+
+            else if (arriba && jugadorEnY > 0) // SI EL JUGADOR VA HACIA ARRIBA...
+            {
+                jugadorEnY -= velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO CONTRARIO.
+                AnimarJugador(12, 15); // LAS ANIMACIONES VAN A SER DEFINIDAS MEDIANTE SUS CANTIDADES RESPECTIVAS PARA CADA CLON DEL JUGADOR.
+            }
+
+            else if (abajo && jugadorEnY + alturaJugador < this.ClientSize.Height) // SI EL JUGADOR VA HACIA ABAJO...
+            {
+                jugadorEnY += velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO DIRECTO.
+                AnimarJugador(0, 3); // LAS ANIMACIONES VAN A SER DEFINIDAS MEDIANTE SUS CANTIDADES RESPECTIVAS PARA CADA CLON DEL JUGADOR.
+            }
+
+            else
+            {
+                AnimarJugador(0, 0);
+            }
+
+            this.Invalidate();
+            cantidadMovimientos.Text = "Movimientos: " + pasos;
+        }
+
         private void Configuracion()
         {
             this.BackgroundImage = Image.FromFile("bg.jpg"); // SE CARGA LA IMAGEN DE FONDO IMPORTADO DENTRO DEL DIRECTORIO.
