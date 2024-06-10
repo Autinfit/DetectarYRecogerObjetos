@@ -2,7 +2,7 @@
 
 - _In this tutorial we will making improvements to the 4 way sprite movements tutorial._
 - _To follow on this please make sure you have finished the last tutorial as we will using the code and set-up from the first project._
-- In this tutorial we will add item drop and collection feature.
+- _In this tutorial we will add item drop and collection feature._
 - For this feature we will be loading 17 different RPG items and drop them randomly on the screen.
 - We will also add a player and item collision feature in the game.
 - The idea is the player can move around the screen and when they collide with an item it will disappear and update the label with the item name.
