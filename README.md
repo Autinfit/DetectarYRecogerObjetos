@@ -9,6 +9,8 @@
 - We will be working in Visual Studio, Windows Forms .Net with C#.
 - Hope you have a fun with this tutorial.
 
+- Traducido del español:
+
 - **_En este tutorial haremos mejoras en el tutorial de movimientos de sprites mediante 4 vías distintas._**
 - **_Para continuar con este proyecto, asegúrate de haber concluido la primera parte del tutorial, ya que lo utilizaremos para el código y lo vamos configurando desde el primer proyecto._**
 - **_En este tutorial agregaremos la función de recolección y caída libre de aquellos elementos._**
