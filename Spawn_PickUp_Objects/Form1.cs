@@ -174,5 +174,16 @@ namespace Spawn_PickUp_Objects
 
             jugador = Image.FromFile(movimientosPersonaje[pasos]); // SE EXTRAE DEL DIRECTORIO ALGUNOS RECURSOS NECESARIOS DEL PERSONAJE PARA EFECTUAR LA ANIMACIÓN.
         }
+
+        private void CrearObjetos()
+        {
+            int i = aleatorio.Next(0, ubicacion_objeto.Count); // CANTIDAD DE OBJETOS AL AZAR.
+
+            Objetos nuevoObjeto = new Objetos(); // SE CREA UN NUEVO OBJETO.
+            nuevoObjeto.imagen_objeto = Image.FromFile(ubicacion_objeto[i]); // OBJETOS MEDIANTE SU PROPIA UBICACIÓN.
+            nuevoObjeto.nombre = nombreObjetos[i]; // NOMBRE DE CADA OBJETO EN PARTICULAR.
+            contadorTiempo = deteccionLimiteTiempo; // VA CONTABILIZANDO EL TIEMPO A MEDIDA DE QUE VA EN CUENTA REGRESIVA...
+            lista_objetos.Add(nuevoObjeto); // AÑADE UN NUEVO OBJETO A LA LISTA DE OBJETOS EXISTENTES DENTRO DEL EXPLORADOR DE SOLUCIONES.
+        }
     }
 }
