@@ -4,7 +4,8 @@
 - To follow on this please make sure you have finished the last tutorial as we will using the code and set up from the first project.
 - In this tutorial we will add item drop and collection feature.
 - For this feature we will be loading 17 different RPG items and drop them randomly on the screen.
-- We will also add a player and item collision feature in the game. The idea is the player can move around the screen and when they collide with an item it will disappear and update the label with the item name. We will be working in Visual Studio, Windows Forms .Net with C#. Hope you have a fun with this tutorial.
+- We will also add a player and item collision feature in the game.
+- The idea is the player can move around the screen and when they collide with an item it will disappear and update the label with the item name. We will be working in Visual Studio, Windows Forms .Net with C#. Hope you have a fun with this tutorial.
 
 - **_En este tutorial haremos mejoras en el tutorial de movimientos de sprites mediante 4 vías distintas._**
 - **_Para continuar con este proyecto, asegúrate de haber concluido la primera parte del tutorial, ya que lo utilizaremos para el código y lo vamos configurando desde el primer proyecto._**
