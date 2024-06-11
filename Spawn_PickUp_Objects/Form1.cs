@@ -177,6 +177,8 @@ namespace Spawn_PickUp_Objects
 
         private void CrearObjetos()
         {
+            // NUEVO MÉTODO PARA CREAR OBJETOS QUE APAREZCAN DINÁMICAMENTE A LA INTERFAZ...
+
             int i = aleatorio.Next(0, ubicacion_objeto.Count); // CANTIDAD DE OBJETOS AL AZAR.
 
             Objetos nuevoObjeto = new Objetos(); // SE CREA UN NUEVO OBJETO.
@@ -184,6 +186,48 @@ namespace Spawn_PickUp_Objects
             nuevoObjeto.nombre = nombreObjetos[i]; // NOMBRE DE CADA OBJETO EN PARTICULAR.
             contadorTiempo = deteccionLimiteTiempo; // VA CONTABILIZANDO EL TIEMPO A MEDIDA DE QUE VA EN CUENTA REGRESIVA...
             lista_objetos.Add(nuevoObjeto); // AÑADE UN NUEVO OBJETO A LA LISTA DE OBJETOS EXISTENTES DENTRO DEL EXPLORADOR DE SOLUCIONES.
+        }
+
+        private void ChequearColisiones()
+        {
+            // NUEVO MÉTODO PARA EFECTUAR CHEQUEO DE COLISIONES...
+
+            // POR CADA OBJETO DENTRO DE UNA LISTA DE OBJETOS...
+
+            foreach (Objetos item in lista_objetos)
+            {
+                item.medidorDeTiempo(); // LLAMADO DEL MÉTODO A INSTANCIAR OBJETOS DENTRO DE ESTA CLASE.
+
+                if (item.expirado) // SI NO ESTÁN LOS OBJETOS APENAS SE ACABA EL TIEMPO...
+                {
+                    item.imagen_objeto = null; // NO HAY NINGÚN OBJETO.
+                    lista_objetos.Remove(item); // ELIMINA LOS OBJETOS DE LA LISTA.
+                }
+
+                bool colisiones = DetectarColisiones(jugadorEnX, jugadorEnY, jugador.Width, jugador.Height, item.posicionX, item.posicionY, item.ancho, item.altura);
+
+                if (colisiones) // SI SE DETECTAN ALGUNA COLISIÓN ENTRE EL PERSONAJE Y UN OBJETO CUALQUIERA...
+                {
+                    cantidadObjetos.Text = "Objetos coleccionados: " + item.nombre;
+                    item.imagen_objeto = null; // NO HAY OBJETOS CUANDO EL PERSONAJE LO RECOGIÓ.
+                    lista_objetos.Remove(item); // ELIMINA EL OBJETO DENTRO DE UNA LISTA DE OBJETOS.
+                }
+            }
+        }
+
+        private bool DetectarColisiones(int objetoX1, int objetoY1, int alturaObjeto1, int anchoObjeto1, int objetoX2, int objetoY2, int alturaObjeto2, int anchoObjeto2)
+        {
+            // NUEVO MÉTODO PARA DETECTAR COLISIONES CON OBJETOS POR PARTE DEL PERSONAJE...
+
+            if (objetoX1 + alturaObjeto1 <= objetoX2 || objetoX1 >= objetoX2 + anchoObjeto2 || objetoY1 + alturaObjeto1 <= objetoY2 || objetoY1 >= objetoY2 + alturaObjeto2) // SI SE POSICIONAN ESTOS OBJETOS PARA EFECTUAR COLISIONES...
+            {
+                return false; // NO SE DETECTA NINGUNA COLISIÓN.
+            }
+
+            else
+            {
+                return true; // EN CASO CONTRARIO, SE DETECTAN COLISIONES.
+            }
         }
     }
 }
