@@ -6,7 +6,7 @@
 - **_For this feature we will be loading 17 different RPG items and drop them randomly on the screen._**
 - **_We will also add a player and item collision feature in the game._**
 - **_The idea is the player can move around the screen and when they collide with an item it will disappear and update the label with the item name._**
-- _We will be working in Visual Studio, Windows Forms .Net with C#._
+- **_We will be working in Visual Studio, Windows Forms .Net with C#._**
 - _Hope you have a fun with this tutorial._
 
 **_Traducido del español:_**
