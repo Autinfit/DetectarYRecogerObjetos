@@ -1,7 +1,7 @@
 # NewRepDetectarYRecogerObjetos
 
 - _In this tutorial we will make improvements to the 4-way sprite movement tutorial._
-- To continue with this project, make sure you have completed the first part of the tutorial, since we will use the code and configure it from the first project.
+- _To continue with this project, make sure you have completed the first part of the tutorial, since we will use the code and configure it from the first project._
 - In this tutorial we will add the collection and free fall function of those elements.
 - For this feature, we'll load 17 different RPG elements and drop them randomly across the screen.
 - We will also add a collision feature between players and items in the game.
