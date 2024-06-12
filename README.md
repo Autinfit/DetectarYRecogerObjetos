@@ -6,7 +6,7 @@
 - For this feature, we'll load 17 different RPG elements and drop them randomly across the screen.
 - We will also add a collision feature between players and items in the game.
 - The idea is that the player can move around the entire screen and when he collides with any element, it will disappear and update the label with the name of said element.
-We will work with Visual Studio + Windows Forms .Net with C#.
+- We will work with Visual Studio + Windows Forms .Net with C#.
 
 - **_En este tutorial haremos mejoras en el tutorial de movimientos de sprites de 4 vías distintas._**
 - **_Para continuar con este proyecto, asegúrate de haber concluido la primera parte del tutorial, ya que utilizaremos el código y lo vamos configurando desde el primer proyecto._**
