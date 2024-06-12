@@ -3,7 +3,7 @@
 - _In this tutorial we will make improvements to the 4-way sprite movement tutorial._
 - _To continue with this project, make sure you have completed the first part of the tutorial, since we will use the code and configure it from the first project._
 - _In this tutorial we will add the collection and free fall function of those elements._
-- For this feature, we'll load 17 different RPG elements and drop them randomly across the screen.
+- _For this feature, we'll load 17 different RPG elements and drop them randomly across the screen._
 - We will also add a collision feature between players and items in the game.
 - The idea is that the player can move around the entire screen and when he collides with any element, it will disappear and update the label with the name of said element.
 - We will work with Visual Studio + Windows Forms .Net with C#.
