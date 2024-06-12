@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             cantidadMovimientos = new Label();
             cantidadObjetos = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // cantidadMovimientos
             // 
             cantidadMovimientos.AutoSize = true;
+            cantidadMovimientos.BackColor = Color.Transparent;
             cantidadMovimientos.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             cantidadMovimientos.ForeColor = Color.Red;
             cantidadMovimientos.Location = new Point(5, 500);
@@ -46,6 +49,7 @@
             // cantidadObjetos
             // 
             cantidadObjetos.AutoSize = true;
+            cantidadObjetos.BackColor = Color.Transparent;
             cantidadObjetos.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             cantidadObjetos.ForeColor = Color.FromArgb(255, 128, 0);
             cantidadObjetos.Location = new Point(500, 500);
@@ -53,6 +57,12 @@
             cantidadObjetos.Size = new Size(324, 38);
             cantidadObjetos.TabIndex = 1;
             cantidadObjetos.Text = "Objetos coleccionados: ";
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 20;
+            timer1.Tick += TiempoEjecucion;
             // 
             // Form1
             // 
@@ -74,5 +84,6 @@
 
         private Label cantidadMovimientos;
         private Label cantidadObjetos;
+        private System.Windows.Forms.Timer timer1;
     }
 }
