@@ -9,7 +9,7 @@
 - **_We will be working in Visual Studio, Windows Forms .Net with C#._**
 - **_Hope you have a fun with this tutorial._**
 
-Objectives of this lesson:
+### Objectives of this lesson:
 
 Create an element class in C# with its own properties, such as xposition, yposition, height and width, etc.
 Create an instance of the class from the main form using custom functions.
