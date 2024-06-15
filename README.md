@@ -10,6 +10,7 @@
 - **_Hope you have a fun with this tutorial._**
 
 Objectives of this lesson:
+
 Create an element class in C# with its own properties, such as xposition, yposition, height and width, etc.
 Create an instance of the class from the main form using custom functions.
 Assign names to elements using an array of strings.
