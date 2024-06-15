@@ -16,7 +16,7 @@
 - Assign names to elements using an array of strings.
 - Upload external files from the folder to a list and use that list to randomly assign images to the item class.
 - Create a time limit per item, so they disappear from the screen when time is up.
-Dynamically add and remove items from the list.
+- Dynamically add and remove items from the list.
 Create a collision system between the player and objects.
 Remove items from the game when the player collides with the items.
 Get the name of the element and display it in the label on the Windows Form.
