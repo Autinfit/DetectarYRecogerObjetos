@@ -17,7 +17,7 @@
 - _Upload external files from the folder to a list and use that list to randomly assign images to the item class._
 - _Create a time limit per item, so they disappear from the screen when time is up._
 - _Dynamically add and remove items from the list._
-- Create a collision system between the player and objects.
+- _Create a collision system between the player and objects._
 - Remove items from the game when the player collides with the items.
 - Get the name of the element and display it in the label on the Windows Forms.
 
