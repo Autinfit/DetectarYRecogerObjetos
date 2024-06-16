@@ -13,7 +13,7 @@
 
 - _Create an element class in C# with its own properties, such as xposition, yposition, height and width, etc._
 - _Create an instance of the class from the main form using custom functions._
-- Assign names to elements using an array of strings.
+- _Assign names to elements using an array of strings._
 - Upload external files from the folder to a list and use that list to randomly assign images to the item class.
 - Create a time limit per item, so they disappear from the screen when time is up.
 - Dynamically add and remove items from the list.
