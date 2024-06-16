@@ -18,7 +18,7 @@
 - _Create a time limit per item, so they disappear from the screen when time is up._
 - _Dynamically add and remove items from the list._
 - _Create a collision system between the player and objects._
-- Remove items from the game when the player collides with the items.
+- _Remove items from the game when the player collides with the items._
 - Get the name of the element and display it in the label on the Windows Forms.
 
 **_Traducido del español:_**
