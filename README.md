@@ -15,7 +15,7 @@
 - _Create an instance of the class from the main form using custom functions._
 - _Assign names to elements using an array of strings._
 - _Upload external files from the folder to a list and use that list to randomly assign images to the item class._
-- _Create a time limit per item, so they disappear from the screen when time is up._
+- _Create a time limit per~item, so they disappear from the screen when time is up._
 - _Dynamically add and remove items from the list._
 - _Create a collision system between the player and objects._
 - _Remove items from the game when the player collides with the items._
